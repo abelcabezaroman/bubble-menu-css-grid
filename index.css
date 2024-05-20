@@ -1,0 +1,53 @@
+.b-bubble-menu {
+    position: relative;
+}
+
+.b-bubble-menu__bg {
+    display: grid;
+}
+
+.b-bubble-menu__bubbles {
+    display: grid;
+    grid-template-columns: repeat(25, minmax(30px, 30px));
+    grid-template-rows: repeat(25, minmax(30px, 30px));
+}
+
+.b-bubble-menu__bubbles--bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.b-bubble-menu__bubbles--bg .b-bubble-menu__bubble {
+    background-color: salmon;
+    margin: 0;
+}
+
+.b-bubble-menu__bubble {
+    background-color: #d45a4c;
+    border-radius: 50%;
+    margin: 40px;
+}
+.b-bubble-menu__bubble--1 {
+    grid-area: 16 / 13 / 7 / 4;
+}
+
+.b-bubble-menu__bubble--2 {
+    grid-area: 2 / 10 / 12 / 20;
+}
+
+.b-bubble-menu__bubble--3 {
+    grid-area: 2 / 25 / 9 / 18;
+}
+
+.b-bubble-menu__bubble--bg {
+    border-radius: 0;
+    grid-area: 25 / 25 / 6 / 11;
+    margin: 0.6px;
+}
+
+.b-bubble-menu__bubble--bg-2 {
+    border-radius: 0;
+    grid-area: 25 / 25 / 11 / 4;
+    margin: 0.6px;
+}
